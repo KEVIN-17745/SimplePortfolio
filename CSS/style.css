@@ -1,0 +1,166 @@
+body {
+    background: #caebf2;
+}
+
+.container {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.container>div {
+    margin: 20px;
+}
+
+.intro {
+    text-align: center;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: relative;
+    left: 10%;
+}
+
+.i-am,
+.i-like {
+
+    text-align: left;
+}
+
+.about-list {
+
+    list-style: none;
+    
+}
+
+@media(max-width: 400px) {
+    .about-grid {
+        grid-template-columns: 100%;
+
+    }
+
+}
+
+.techStack-heading{
+    text-align: center;
+}
+
+.techStack-grid {
+    position: relative;
+    left: 20%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+}
+.techStack-grid img{
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+}
+
+.projects-heading {
+    text-align: center;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.project-image-wrapper {
+    justify-self: center;
+    padding: 4%;
+    position: relative;
+}
+.project-image-wrapper img {
+    width: 300px;
+    height: 250px;
+}
+@media(max-width: 650px) {
+    .projects-grid {
+        grid-template-columns: 100%;
+    }
+
+}
+
+.links-and-contacts {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.links {
+    justify-self: center;
+}
+
+.links-list {
+    list-style: none;
+    padding: 0%;
+}
+
+@media(max-width: 650px) {
+    .links-and-contacts {
+        grid-template-columns: 100%;
+    }
+
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 4px 6px 0 rgb(34, 60, 80, 0.16);
+    transition: all ease-in-out .2s;
+}
+
+.profile-picture:hover {
+    box-shadow: 0 8px 12px 0 rgba(17, 0, 93, 0.368);
+}
+
+.project-image {
+    border-radius: 5px;
+    box-shadow: 0 4px 6px 0 rgb(34, 60, 80, 0.16);
+    transition: all ease-in-out .2s;
+}
+
+.project-imagge:hover {
+    filter: brightness(.75s);
+    box-shadow: 0 8px 12px 0 rgba(17, 0, 93, 0.368);
+}
+
+.project-image-wrapper:hover>h4 {
+    visibility: visible;
+}
+
+.project-image-wrapper>h4 {
+    position: absolute;
+    top: 90%;
+    left: 20%;
+    transform: reanslate(-50%, -50%);
+    color: black;
+    visibility: hidden;
+    z-index: 2;
+    transition: all ease-in-out .2s;
+}
+
+form input,
+textarea {
+    padding: 5px;
+    border-radius: 5px;
+    width: 240px;
+
+}
+
+form input[type="submit"] {
+    width: 250px;
+}
+
+.submit-button-wrapper {
+    margin: 20px 0;
+}
+
+.hr {
+    border: 0px;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
